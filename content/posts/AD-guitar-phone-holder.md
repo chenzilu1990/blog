@@ -1,7 +1,7 @@
 ---
 title: '解放双手，乐享演奏：RockCheems 吉他手机支架测评'
 date: '2024-07-28' # 你可以修改为实际发布日期
-# featuredImage: '/images/rockcheems-holder-main.jpg' # 建议替换为产品图片路径
+featuredImage: 'https://f.media-amazon.com/images/I/612TlXetPEL.__AC_SX300_SY300_QL70_FMwebp_.jpg' # 建议替换为产品图片路径
 tags: ['吉他', '配件', '手机支架', '演奏', '练习', '直播', '测评']
 ---
 
