@@ -231,7 +231,7 @@ a.secondary {
   object-fit: cover; /* 覆盖容器，可能裁剪 */
   transition: transform 0.3s ease;
 }
-
 .listItem:hover .featuredImage {
   transform: scale(1.05); /* 悬停时轻微放大 */
 }
+
