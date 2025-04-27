@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily' as const,
       priority: 1,
     },
+    {
+      url: `${baseUrl}/sitemap.xml`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.5,
+    },
     // 如果有其他固定页面，也可以添加在这里
   ];
   

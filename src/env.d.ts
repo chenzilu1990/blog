@@ -16,6 +16,9 @@ declare global {
       // Google Analytics
       NEXT_PUBLIC_GA_MEASUREMENT_ID: string;
       
+      // Google Search Console
+      NEXT_PUBLIC_GSC_VERIFICATION: string;
+      
       // 标准 Node.js 环境变量
       NODE_ENV: 'development' | 'production' | 'test';
     }
