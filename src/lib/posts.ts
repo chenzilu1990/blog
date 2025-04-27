@@ -10,6 +10,7 @@ export interface PostData {
   title: string;
   date: string;
   featuredImage?: string; // 添加可选的 featuredImage 字段
+  excerpt?: string; // 添加可选的文章摘要字段
   [key: string]: any; // 允许其他元数据字段
 }
 
@@ -38,12 +39,17 @@ export function getSortedPostsData(): PostData[] {
     // 提取元数据，包括 featuredImage
     const data = matterResult.data as { title: string; date: string; featuredImage?: string };
 
+    // 创建摘要（取内容的前 150 个字符）
+    const contentText = matterResult.content;
+    const excerpt = contentText.substring(0, 150).trim() + (contentText.length > 150 ? '...' : '');
+
     // Combine the data with the id
     return {
       id,
       title: data.title,
       date: data.date,
       featuredImage: data.featuredImage || null, // 如果不存在则设为 null 或 undefined
+      excerpt: excerpt, // 添加摘要
     } as PostData; // 确保返回类型符合 PostData
   });
 

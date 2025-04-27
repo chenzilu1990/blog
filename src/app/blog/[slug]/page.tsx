@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // 先 await params
   const awaitedParams = await params;
-  const postData: PostDataWithContent = await getPostData(awaitedParams.slug); // 使用 awaitedParams.slug
+  const postData: PostDataWithContent = await getPostData(awaitedParams.slug);
   return {
     title: postData.title,
     description: `阅读博客文章：${postData.title}`, // 可以更详细
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Post({ params }: Props) {
   // 先 await params
   const awaitedParams = await params;
-  const postData: PostDataWithContent = await getPostData(awaitedParams.slug); // 使用 awaitedParams.slug
+  const postData: PostDataWithContent = await getPostData(awaitedParams.slug);
 
   return (
     <article className={styles.article}>
