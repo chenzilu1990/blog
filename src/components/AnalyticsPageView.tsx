@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
 // 声明 gtag 类型，避免 TypeScript 错误
 declare global {
@@ -14,7 +14,8 @@ declare global {
   }
 }
 
-export function AnalyticsPageView() {
+// 实际使用 useSearchParams 的组件包装在 Suspense 中
+function AnalyticsPageViewInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -36,4 +37,13 @@ export function AnalyticsPageView() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+// 导出带有 Suspense 边界的组件
+export function AnalyticsPageView() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsPageViewInner />
+    </Suspense>
+  );
 } 
