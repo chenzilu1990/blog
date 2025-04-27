@@ -4,7 +4,7 @@ import { getPostData, getAllPostIds, PostDataWithContent } from '@/lib/posts';
 import styles from './page.module.css'; // 引入 CSS Module
 
 type Props = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 // 生成静态路径
