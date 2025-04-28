@@ -8,6 +8,7 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   line-height: 1.7;
   color: #333;
+  font-family: var(--font-lxgw-wenkai);
 }
 
 .title {
