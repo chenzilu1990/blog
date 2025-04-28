@@ -9,8 +9,6 @@ tags: ['吉他', '配件', '手机支架', '演奏', '练习', '直播', '测评
 
 今天我们要介绍的这款 **RockCheems 吉他手机支架**，就是为了解决这些痛点而设计的神器。
 
-![RockCheems 吉他手机支架安装在吉他上](/images/rockcheems-holder-installed.jpg "RockCheems 吉他手机支架")
-*(图片建议替换为实际产品图)*
 
 这款支架巧妙地安装在吉他琴头，将你的手机牢牢固定在视线范围内，彻底解放你的双手。无论是：
 
@@ -32,6 +30,6 @@ tags: ['吉他', '配件', '手机支架', '演奏', '练习', '直播', '测评
 
 **点击下方链接，了解更多详情或立即购买！**
 
-\[点击这里查看 RockCheems 吉他手机支架详情 (Amazon)](https://www.amazon.com/RockCheems-Broadcast-Recording-Suitable-Compatible/dp/B0DC4LFV9C/?_encoding=UTF8&pd_rd_w=TP2E6&content-id=amzn1.sym.255b3518-6e7f-495c-8611-30a58648072e%3Aamzn1.symc.a68f4ca3-28dc-4388-a2cf-24672c480d8f&pf_rd_p=255b3518-6e7f-495c-8611-30a58648072e&pf_rd_r=A0FKKFNHYTDPZ7YKV5P5&pd_rd_wg=U0vfv&pd_rd_r=20539d9a-05f7-441c-b10d-d0ce01468a64&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d&th=1)
+[点击这里查看 RockCheems 吉他手机支架详情 (Amazon)](https://www.amazon.com/RockCheems-Broadcast-Recording-Suitable-Compatible/dp/B0DC4LFV9C/?_encoding=UTF8&pd_rd_w=TP2E6&content-id=amzn1.sym.255b3518-6e7f-495c-8611-30a58648072e%3Aamzn1.symc.a68f4ca3-28dc-4388-a2cf-24672c480d8f&pf_rd_p=255b3518-6e7f-495c-8611-30a58648072e&pf_rd_r=A0FKKFNHYTDPZ7YKV5P5&pd_rd_wg=U0vfv&pd_rd_r=20539d9a-05f7-441c-b10d-d0ce01468a64&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d&th=1)
 
 *(免责声明：本文包含推广链接。购买前请仔细确认产品规格是否满足您的具体需求。)*

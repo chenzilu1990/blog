@@ -101,27 +101,27 @@ export default async function Post({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <article className={styles.article}>
-        {/* 显示封面图片 */}
-        {postData.featuredImage && (
-          <div className={styles.featuredImageContainer}>
-             <Image
-                src={postData.featuredImage}
-                alt={`${postData.title} featured image`}
-                width={800} // 文章页用大图
-                height={450} // 调整为 16:9 比例
-                priority // 标记为优先加载，因为通常在视口内
-                className={styles.featuredImageSingle}
-              />
-          </div>
-        )}
-        <h1 className={styles.title}>{postData.title}</h1>
-        <div className={styles.date}>{postData.date}</div>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-        />
-      </article>
+    <article className={styles.article}>
+      {/* 显示封面图片 */}
+      {postData.featuredImage && (
+        <div className={styles.featuredImageContainer}>
+           <Image
+              src={postData.featuredImage}
+              alt={`${postData.title} featured image`}
+              width={800} // 文章页用大图
+              height={450} // 调整为 16:9 比例
+              priority // 标记为优先加载，因为通常在视口内
+              className={styles.featuredImageSingle}
+            />
+        </div>
+      )}
+      <h1 className={styles.title}>{postData.title}</h1>
+      <div className={styles.date}>{postData.date}</div>
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
+    </article>
     </>
   );
 } 

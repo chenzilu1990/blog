@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { AnalyticsPageView } from "@/components/AnalyticsPageView";
 import { CookieConsent } from "@/components/CookieConsent";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { geistSans, geistMono, lxgwWenKai } from "./fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -67,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={process.env.NEXT_PUBLIC_DEFAULT_LOCALE?.substring(0, 2) || "zh"}>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${lxgwWenKai.variable}`}>
         <GoogleAnalytics />
         <AnalyticsPageView />
         <CookieConsent />

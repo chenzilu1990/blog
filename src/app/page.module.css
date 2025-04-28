@@ -13,7 +13,7 @@
   min-height: 100svh;
   padding: 10px;
   gap: 10px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-lxgw-wenkai);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -169,7 +169,7 @@ a.secondary {
 
 /* Styles from src/app/blog/page.module.css */
 .blogSection {
-  max-width: 800px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 1rem;
 }
@@ -185,15 +185,20 @@ a.secondary {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; /* 网格间距 */
 }
 
 .listItem {
-  margin-bottom: 1.5rem;
+  /* 移除 margin-bottom，使用 grid 的 gap */
   padding: 1.5rem;
   border: 1px solid #eee;
   border-radius: 8px;
   background-color: #f9f9f9;
   transition: box-shadow 0.2s ease-in-out;
+  display: flex; /* 使用 flex 布局优化内部元素对齐 */
+  flex-direction: column;
 }
 
 .listItem:hover {
@@ -205,6 +210,11 @@ a.secondary {
   color: #0070f3;
   text-decoration: none;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 限制最多显示 2 行 */
+  -webkit-box-orient: vertical;
 }
 
 .link:hover {
@@ -227,7 +237,7 @@ a.secondary {
 
 .featuredImage {
   width: 100%; /* 图片宽度占满容器 */
-  height: auto; /* 高度自动，保持比例 */
+  height: 150px; /* 减小固定图片高度 */
   object-fit: cover; /* 覆盖容器，可能裁剪 */
   transition: transform 0.3s ease;
 }
@@ -242,5 +252,8 @@ a.secondary {
   color: #555;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box; /* 启用 flexbox 布局 */
+  -webkit-line-clamp: 3; /* 限制最多显示的行数 */
+  -webkit-box-orient: vertical; /* 设置 flexbox 方向为垂直 */
 }
 
